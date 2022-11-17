@@ -33,3 +33,27 @@ Const merupakan sebuah syntax yang digunakan untuk melakukan deklarasi dari vari
 - Mengubah titel pada myHompage menjadi `Program Counter`
 - Pada body, ditambahkan/membuat if else kondisional yang mana akan dicek ketika variable counter akan bernilai ganjil maupun genap lalu menampilkan kondisi tersebut sesuai dengan angka yang ditampilkan pada saat melakukan counter.
 - Memodifikasi dan menambahkan button, yaitu menambahkan button yang akan menampung perintah dari `_decrementCounter()`
+
+# Tugas 8 Pemrograman Berbasis Platform
+
+## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+`Navigator.push` merupakan sebuah metode dimana pada metode tersebut dilakukan pembuatan sebuah rute baru atau page baru yang dimana ketika dilakukan push akan terlihat seperti sebuah tumpukan screen (stack), oleh karena itu page sebelumnya tidak dihapus. Sedangkan untuk `Navigator.pushReplacement` akan mengganti page nya ke page yang baru.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+- onSaved
+- onChanged
+- onHover
+- onTap
+- onFieldSubmitted
+- onEditingComplete
+
+## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+Navigator di aplikasi Flutter bekerja layaknya sebuah struktur data stack dimana menggunakan prinsip Last in First out, yang dimana widget ini berfungsi untuk menumpuk sebuah page.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Menambahkan drawer pada `main.dart`
+- Membuat sebuah page baru untuk Menambahkan Budget dengan nama `form.dart`
+- Menambahkan TextField dan Dropdown untuk input menambahkan button pada `form.dart`. Selain itu, perlu juga menambahkan submit button
+- Membuat sebuah page baru untuk menampilkan Data Budget yang dimasukkan pada `form.dart` dengan nama `data.dart`
