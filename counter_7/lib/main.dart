@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:counter_7/form.dart';
+import 'package:counter_7/data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.blueGrey,
       ),
       home: const MyHomePage(),
     );
@@ -103,12 +104,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
-                title: const Text('Form'),
+                title: const Text('Tambah Budget'),
                 onTap: () {
                   // Route menu ke halaman form
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const MyFormPage()),
+                  );
+                },
+              ),
+                ListTile(
+                title: const Text('Data Budget'),
+                onTap: () {
+                  // Route menu ke halaman form
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MyDataPage()),
                   );
                 },
               ),
