@@ -40,6 +40,14 @@ Const merupakan sebuah syntax yang digunakan untuk melakukan deklarasi dari vari
 `Navigator.push` merupakan sebuah metode dimana pada metode tersebut dilakukan pembuatan sebuah rute baru atau page baru yang dimana ketika dilakukan push akan terlihat seperti sebuah tumpukan screen (stack), oleh karena itu page sebelumnya tidak dihapus. Sedangkan untuk `Navigator.pushReplacement` akan mengganti page nya ke page yang baru.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+- Drawer berfungsi untuk menambahkan hamburger menu sebagai tombol routing menuju halaman lain
+- Navigator berfungsi untuk melakukan navigasi menuju routing ke halaman lain
+- ListTile berfungsi sebagai container sekaligus tombol untuk menuju halaman lain
+- Form berfungsi sebagai container untuk widget-widget input form
+- TextFormField berfungsi untuk menerima input text
+- TextButton berfungsi sebagai sebuah button dengan fungsi yang dideklarasikan ketika onclick
+- DropdownButtonField berfungsi untuk membuat pilihan untuk user
+- Card berfungsi sebagai containerl yang digunakan untuk menampilkan informasi dalam bentuk card
 
 ## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
 - onSaved
@@ -57,3 +65,4 @@ Navigator di aplikasi Flutter bekerja layaknya sebuah struktur data stack dimana
 - Membuat sebuah page baru untuk Menambahkan Budget dengan nama `form.dart`
 - Menambahkan TextField dan Dropdown untuk input menambahkan button pada `form.dart`. Selain itu, perlu juga menambahkan submit button
 - Membuat sebuah page baru untuk menampilkan Data Budget yang dimasukkan pada `form.dart` dengan nama `data.dart`
+- Dalam `data.dart` tersebut ditambahkan drawer dan komponen untuk menampilkan form yang tadi dibuat ke dalam page data.
