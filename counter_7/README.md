@@ -66,3 +66,26 @@ Navigator di aplikasi Flutter bekerja layaknya sebuah struktur data stack dimana
 - Menambahkan TextField dan Dropdown untuk input menambahkan button pada `form.dart`. Selain itu, perlu juga menambahkan submit button
 - Membuat sebuah page baru untuk menampilkan Data Budget yang dimasukkan pada `form.dart` dengan nama `data.dart`
 - Dalam `data.dart` tersebut ditambahkan drawer dan komponen untuk menampilkan form yang tadi dibuat ke dalam page data.
+
+# Tugas 9 Pemrograman Berbasis Platform
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Pengambilan data JSON tanpa membuat model terlebih dahulu bisa dilakukan, namun response nantinya perlu didefinisikan ulang secara manual. Oleh karena itu, membuat model sebelum melakukan pengamvilan data JSON akan lebih baik, karena kita dapat merepresentasikan struktur data yang akan diterima saat melakukan pengambilan data.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+- CircularProgressIndicator untuk memberikan tampilan berupa loading ketika aplikasi menunggu fecth data JSON.
+- Expanded untuk memperbesar widget child sepanjang axis dari Row/Column
+- FutureBuilder untuk melakukan update child dari hasil future yang diberikan
+- InkWell untuk area yang akan merespon ketika ada onTap Event
+- Checkbox untuk membuat checkbox
+
+##  Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+Awalnya flutter akan melakukan GET ke server. Lalu, response akan diberikan dalam bentuk JSON sesuai fungsi views yang ada pada Django. Data JSON yang diterima kemudian akan diubah ke sebuah bentuk model yang kemudian ditampilkan dengan memanfaatkan FutureBuilder.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Melakukan Refactor beberapa file ke folder model, page, atau utils, lalu menambahkan navigasi apda drawer yang mengarah ke halaman mywatchlist
+- Membuat model Watchlist di folder model yang di generate dari response JSON endpoint
+- membuat file watchlist_fecth di folder utils, untuk mengambil data JSON dari web service
+- Membuat file watchlist_page di folder page yang akan menamvilkan judul watchlist dengan menggunakan FutureBuilder
+- Membuat dile watchlist_details di folder page yang akan menampilkan detail dari tiap watchlist yang ada pada page utama. Selain itu, menambahkan button back yang akan kembali ke halaman utama
+- Menambahkan InkWell widget yang akan merespon ketika diketuk dan akan mengarahkan page ke details dari judul film.
